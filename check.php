@@ -28,4 +28,4 @@ $headers = "From: $email\r\nReply-to: $email\r\nContent type: text/plain;charset
 
 mail('dedovdwork@gmail.com', $subject, $message, $headers);
 
-header('Location: /index.php');
+header('Location: index.php');

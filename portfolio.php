@@ -12,9 +12,27 @@
     <title>PHP Website</title>
 </head>
 <body>
+<?php require "header.php" ?>
 
-   <?php require "blocks/header.php"?>
+<h2 class="title-3">Our service</h2>
 
-   <?php require "blocks/footer.php"?>
+<div class="container d-flex flex-wrap">
+    <?php
+    for ($i = 1; $i <= 3; $i++):
+        ?>
+        <div class="card shadow-sm mb-4 ml-2">
+            <div class="card-header bg-white">
+                <h4 class="my-0 font-weight-normal text-center"><?php if ($i == 1) echo "Social media"; else if ($i == 2) echo "Website for developer"; else if ($i == 3) echo "Media project" ?></h4>
+            </div>
+            <div class="card-body">
+                <img src="img/<?php if ($i == 1) echo "xing"; else if ($i == 2) echo "javascript"; else if ($i == 3) echo "dzone" ?>.png" alt="logo" class="imgCard mb-5">
+
+                <a href="<?php if ($i == 1) echo "https://www.xing.com/"; else if ($i == 2) echo "https://www.javascript.com/"; else if ($i == 3) echo "https://dzone.com/" ?>" target="_blank" class="btn btn-lg btn-block btn-outline-primary">More</a>
+            </div>
+        </div>
+    <? endfor; ?>
+</div>
+
+<?php require "footer.php" ?>
 </body>
 </html>

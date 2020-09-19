@@ -95,3 +95,7 @@ body {
     background: linear-gradient(45deg, #533bcc, #5bbfdb);
     margin-bottom: 5%;
 }
+
+.portfolio-container {
+    align-items: center;
+}

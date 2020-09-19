@@ -12,7 +12,7 @@
     <title>PHP Website</title>
 </head>
 <body>
-<?php require "blocks/header.php" ?>
+<?php require "header.php" ?>
 <div class="container mt-5">
     <h3 class="text-center">Contacts</h3>
     <form action="check.php" method="post">
@@ -27,6 +27,6 @@
 
     </form>
 </div
-<?php require "blocks/footer.php" ?>
+<?php require "footer.php" ?>
 </body>
 </html>

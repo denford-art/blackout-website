@@ -13,14 +13,7 @@
 </head>
 <body>
 <section class="mainSection">
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-none">
-        <h5 class="nav-model my-0 mr-md-auto font-weight-normal">BlackOut</h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-white" href="#">Home</a>
-            <a class="p-2 text-white" href="#">Portfolio</a>
-        </nav>
-        <a class="btn btn-light btn-lg" href="#">Order</a>
-    </div>
+    <?php require "header.php" ?>
 
 
     <div class="container mt-5">
@@ -56,17 +49,16 @@
         ?>
         <div class="card shadow-sm mb-4 ml-2">
             <div class="card-header bg-white">
-                <h4 class="my-0 font-weight-normal text-center">Text</h4>
+                <h4 class="my-0 font-weight-normal text-center"><?php if ($i == 1) echo "Websites for business"; else if ($i == 2) echo "Business automation"; else if ($i == 3) echo "Services and startups" ?></h4>
             </div>
             <div class="card-body">
                 <img src="img/<?php echo $i ?>.png" alt="logo" class="imgCard">
                 <ul class="list-unstyled mt-3 mb-4 text-center">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
+                    <li><?php if ($i == 1) echo "Corporate site"; else if ($i == 2) echo "Personal account"; else if ($i == 3) echo "Online learning systems" ?></li>
+                    <li><?php if ($i == 1) echo "Online store"; else if ($i == 2) echo "Chat bots"; else if ($i == 3) echo "Online services" ?></li>
+                    <li><?php if ($i == 1) echo "Website redesign"; else if ($i == 2) echo "Tender sites"; else if ($i == 3) echo "Information portal" ?></li>
                 </ul>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">More</button>
+                <a href="portfolio.php" class="btn btn-lg btn-block btn-outline-primary">More</a>
             </div>
         </div>
     <? endfor; ?>
@@ -74,7 +66,7 @@
 
 </div>
 
-<?php require "blocks/footer.php" ?>
+<?php require "footer.php" ?>
 
 </body>
 </html>
