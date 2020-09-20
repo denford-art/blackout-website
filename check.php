@@ -1,6 +1,6 @@
 <?php
 
-print_r($_POST);
+$_POST;
 $name = $_POST['name'];
 $email = $_POST['email'];
 $number = $_POST['number'];
@@ -26,6 +26,6 @@ if($error != '') {
 $subject = "=?utf-8?B?".base64_encode("Order to develop website")."?=";
 $headers = "From: $email\r\nReply-to: $email\r\nContent type: text/plain;charset=utf-8\r\n";
 
-mail('dedovdwork@gmail.com', $subject, $message, $headers);
+mail('', $subject, $message, $headers);
 
 header('Location: index.php');

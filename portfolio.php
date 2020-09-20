@@ -30,7 +30,7 @@
                 <a href="<?php if ($i == 1) echo "https://www.xing.com/"; else if ($i == 2) echo "https://www.javascript.com/"; else if ($i == 3) echo "https://dzone.com/" ?>" target="_blank" class="btn btn-lg btn-block btn-outline-primary">More</a>
             </div>
         </div>
-    <? endfor; ?>
+    <?php endfor; ?>
 </div>
 
 <?php require "footer.php" ?>

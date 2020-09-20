@@ -13,7 +13,7 @@
 </head>
 <body>
 <section class="mainSection">
-    <?php require "header.php" ?>
+    <?php require "header.php"; ?>
 
 
     <div class="container mt-5">
@@ -45,28 +45,27 @@
 
 <div class="container d-flex flex-wrap">
     <?php
-    for ($i = 1; $i <= 3; $i++):
-        ?>
+    for ($i = 1; $i <= 3; $i++): ?>
         <div class="card shadow-sm mb-4 ml-2">
             <div class="card-header bg-white">
-                <h4 class="my-0 font-weight-normal text-center"><?php if ($i == 1) echo "Websites for business"; else if ($i == 2) echo "Business automation"; else if ($i == 3) echo "Services and startups" ?></h4>
+                <h4 class="my-0 font-weight-normal text-center"><?php if ($i == 1) echo "Websites for business"; else if ($i == 2) echo "Business automation"; else if ($i == 3) echo "Services and startups"; ?></h4>
             </div>
             <div class="card-body">
-                <img src="img/<?php echo $i ?>.png" alt="logo" class="imgCard">
+                <img src="img/<?php echo $i; ?>.png" alt="logo" class="imgCard">
                 <ul class="list-unstyled mt-3 mb-4 text-center">
-                    <li><?php if ($i == 1) echo "Corporate site"; else if ($i == 2) echo "Personal account"; else if ($i == 3) echo "Online learning systems" ?></li>
-                    <li><?php if ($i == 1) echo "Online store"; else if ($i == 2) echo "Chat bots"; else if ($i == 3) echo "Online services" ?></li>
-                    <li><?php if ($i == 1) echo "Website redesign"; else if ($i == 2) echo "Tender sites"; else if ($i == 3) echo "Information portal" ?></li>
+                    <li><?php if ($i == 1) echo "Corporate site"; else if ($i == 2) echo "Personal account"; else if ($i == 3) echo "Online learning systems"; ?></li>
+                    <li><?php if ($i == 1) echo "Online store"; else if ($i == 2) echo "Chat bots"; else if ($i == 3) echo "Online services"; ?></li>
+                    <li><?php if ($i == 1) echo "Website redesign"; else if ($i == 2) echo "Tender sites"; else if ($i == 3) echo "Information portal"; ?></li>
                 </ul>
                 <a href="portfolio.php" class="btn btn-lg btn-block btn-outline-primary">More</a>
             </div>
         </div>
-    <? endfor; ?>
+    <?php endfor; ?>
 </div>
 
 </div>
 
-<?php require "footer.php" ?>
+<?php require "footer.php"; ?>
 
 </body>
 </html>

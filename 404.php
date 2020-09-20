@@ -4,7 +4,7 @@
     <title>404 - page not found</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap' rel='stylesheet' type='text/css'>
     <style type="text/css">
         html, body {width:100%;height:100%;overflow:hidden;margin:0px;padding:0px;font-family:'Open Sans',sans-serif;font-size:16px}
         body {background:url('img/404.png') center no-repeat #fff}
@@ -16,6 +16,7 @@
             .content {position:static;}
             .content a {display:block;width:100%;height:100%;position:absolute;top:0px;left:0px;font-size:0px;opacity:0;}
             body {background-size:cover}
+        .title-error {font-family: 'Roboto Mono', monospace; text-align: center; margin-top: 5%; margin-left: 5%;}
         }
     </style>
 </head>
